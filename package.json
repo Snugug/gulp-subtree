@@ -1,6 +1,6 @@
 {
   "name": "gulp-subtree",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "Gulp module to push a folder to a subtree",
   "main": "index.js",
   "scripts": {
@@ -12,6 +12,7 @@
   },
   "keywords": [
     "gulp",
+    "gulpplugin",
     "git",
     "subtree",
     "export",
