@@ -1,6 +1,6 @@
 {
   "name": "gulp-subtree",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Gulp module to push a folder to a subtree",
   "main": "index.js",
   "scripts": {
@@ -17,10 +17,16 @@
     "export",
     "deploy"
   ],
-  "author": "Sam Richard",
+  "author": {
+    "name": "Sam Richard",
+    "url": "https://snugug.com"
+  },
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/Snugug/gulp-subtree/issues"
+  },
+  "engines": {
+    "node": ">=0.9"
   },
   "homepage": "https://github.com/Snugug/gulp-subtree",
   "dependencies": {
