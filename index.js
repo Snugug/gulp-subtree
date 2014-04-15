@@ -13,6 +13,17 @@ function execute(command, callback){
 
 module.exports = function (options) {
   return es.map(function (file, cb) {
+
+    //////////////////////////////
+    // Does not work with buffers
+    //////////////////////////////
+    if (file.isBuffer()) {
+      return cb(
+        new gutil.PluginError("gulp-subtree", "Gulp Subtree is only supported for folders"),
+        file
+      );
+    }
+
     var folder = file.path.replace(file.cwd + '/', '');
 
     var remote = 'origin';
