@@ -14,9 +14,9 @@ var subtree = require('gulp-subtree');
 var clean = require('gulp-clean');
 
 gulp.task('subtree', function () {
-	return gulp.src('dist')
-		.pipe(subtree())
-		.pipe(clean());
+  return gulp.src('dist')
+    .pipe(subtree())
+    .pipe(clean());
 });
 ```
 
@@ -29,11 +29,12 @@ var subtree = require('gulp-subtree');
 var clean = require('gulp-clean');
 
 gulp.task('subtree', function () {
-	return gulp.src('dist')
-		.pipe(subtree({
-			remote: 'upstream',
-			branch: 'master',
-			message: 'Here We Go!'
-		}));
+  return gulp.src('dist')
+    .pipe(subtree({
+      remote: 'upstream',
+      branch: 'master',
+      message: 'Here We Go!'
+    }))
+    .pipe(clean());
 });
 ```
