@@ -3,6 +3,10 @@ Gulp Subtree
 
 A little gulp module to let you push a folder to a git subtree without keeping that folder in your git history. Highly recommend to use with [gulp-clean](https://www.npmjs.org/package/gulp-clean).
 
+# IMPORTANT!
+
+In order for Gulp Subtree to work correctly, the folder you are pushing **MUST NOT BE IGNORED THROUGH GIT**. Often, this is the `dist` folder. This is because Gulp Subtree needs to be able to temporarly add it to your Git repository in order to push it. For this reason, it's recommended to pair with [gulp-clean](https://www.npmjs.org/package/gulp-clean), allowing your distribution folder to be totally removed after it's been pushed.
+
 ## Usage
 
 ```js
