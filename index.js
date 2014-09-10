@@ -1,4 +1,5 @@
 'use strict';
+var path = require('path');
 var es = require('event-stream');
 var gutil = require('gulp-util');
 var exec = require('child_process').exec;
@@ -24,7 +25,7 @@ module.exports = function (options) {
       );
     }
 
-    var folder = file.path.replace(file.cwd + '/', '');
+    var folder = file.path.replace(file.cwd + path.sep, '');
 
     var remote = 'origin';
     var branch = 'gh-pages';
